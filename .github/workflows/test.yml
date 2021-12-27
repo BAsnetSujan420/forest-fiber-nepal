@@ -10,5 +10,10 @@ jobs:
           node-version: 16
       - name: Build the project
         run: npm install && npm run build
+      - name: Deploying the project
+        env:
+          VERCEL_ORG_ID: dzEfP5N1YHyaVXJUtQLFL8DF
+          VERCEL_PROJECT_ID: prj_hUqIf5d8WYB0KtJOMJ5kLn5MX62j
+        run: npm run deploy
       - name: Steup finish
         run: echo "hurray!"
