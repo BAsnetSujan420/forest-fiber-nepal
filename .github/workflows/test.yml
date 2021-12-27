@@ -6,3 +6,8 @@ jobs:
     steps:
       - run: echo "hello world !!!!"
       - run: echo "this is step number 2"
+  print-my-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is awesome"
+      - run: echo "step 3 is CI/CD"
