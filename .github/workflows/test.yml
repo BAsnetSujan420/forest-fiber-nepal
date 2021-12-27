@@ -8,8 +8,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      -name: Build the project
+      - name: Build the project
         run: npm run start
-      -name: Steup finish
+      - name: Steup finish
         run: echo "hurray!"
-
